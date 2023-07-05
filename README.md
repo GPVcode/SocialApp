@@ -23,18 +23,23 @@ Hooked up MongoDB to server.
 Designed database structure.
 
 Set up authentication:
+
 - Set up register user API. Register router middleware will be with Multer upload variable in index file. Create controller in separate controllers/auth.js file.
+
 - Set up login API in a seperate folder. Login router middleware may be in its own /routes/auth.js file along with remaining router middlwares to be installed. Controller middlware will be with other controller middleware functions.
 
 Set up authorization: Hit API endpoints unauthorized users lack access to
 - create verifyToken middleware function in middlware/auth folder.
+
 - create USER routes (grab particular users via ID, getting user friends list, adding and removing friends)
 - set up USER controller middleware functions for getting user, getting user friends, and adding/removing friends.
-- set up POST routes in index to use Multer upload.
-- create postRoutes in /routes/posts.js
-- set up POST middleware controllers (createPost, getFeedPosts, getUserPosts, likePost) in /controllers/post.js
-- set up models for Post and import it into  post controllers
 
+- set up POST route for picture in index file to use Multer upload.
+- create postRoutes in /routes/posts.js
+- set up Mongoose model for Post and import it into post controllers
+- set up POST middleware controllers (createPost, getFeedPosts, getUserPosts, likePost) in /controllers/post.js
+
+Backend is now complete with necessary routes.
 
 ## Learn More
 
