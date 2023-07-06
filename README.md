@@ -1,25 +1,23 @@
 # Fullstack Social Media App
 
-This project was bootstrapped with [Create React App]
-
 ## Tools
 
 This project will use the following tools:
 
-### Frontend: 
+#### Frontend: 
 
 React, JavaScript, React Router (navigation), Formik & Yup (form validation), redux toolkit (state management), Redux Persist(store in local storage), React dropzone for image uploads
 
-### Backend: 
+#### Backend: 
 Node.js(runtime), Express.js(backend framework), Mongoose (managing Mongo database), JWT (authentication), Multer (file uploads)
 Other backend packages: body-parser(process req body), bcrypt(PW encryption), Cors(cross origin request), dotenv(env variables), gridfs-stream(file upload), multer & multer-gridfs-storage(upload files locally), helmet(req safety), Morgan(login)
-
-
 
 ## Steps
 
 Boiler plate set up for client and server.
+
 Hooked up MongoDB to server.
+
 Designed database structure.
 
 Set up authentication:
