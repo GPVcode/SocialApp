@@ -51,7 +51,7 @@ Set up routes in App file
 
 Set up Redux Toolkit for state management. Start by creating slice for mode, login, logout, updating friends, post, and posts. Import this authReducer into root index file, create store, and wrap app with provider passing in store data. Configure React Persist here with your store to store data to local storage.
 
-Next create theme file in src directory
+Next create theme file in src directory and customize theme. Configure theme in App.js and pass in theme using Theme Provider. Use Css baseline to reset CSS.
 
 ## Learn More
 
