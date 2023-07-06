@@ -14,6 +14,7 @@ Other backend packages: body-parser(process req body), bcrypt(PW encryption), Co
 
 ## Steps
 
+### Backend:
 Boiler plate set up for client and server.
 
 Hooked up MongoDB to server.
@@ -38,6 +39,19 @@ Set up authorization: Hit API endpoints unauthorized users lack access to
 - set up POST middleware controllers (createPost, getFeedPosts, getUserPosts, likePost) in /controllers/post.js
 
 Backend is now complete with necessary routes.
+
+### Frontend
+Frontend folder set up will be organized by scenes(homepage, profile page, login page, global navbar, and widgets), reusable components, and state for redux and toolkit configuration.
+
+Set up React boilerplate and above folders and files.
+
+set up jsconfig file to simplify file directories by starting from src
+
+Set up routes in App file
+
+Set up Redux Toolkit for state management. Start by creating slice for mode, login, logout, updating friends, post, and posts. Import this authReducer into root index file, create store, and wrap app with provider passing in store data. Configure React Persist here with your store to store data to local storage.
+
+Next create theme file in src directory
 
 ## Learn More
 
