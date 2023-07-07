@@ -5,12 +5,11 @@
 This project will use the following tools:
 
 #### Frontend: 
-
-React, JavaScript, React Router (navigation), Formik & Yup (form validation), redux toolkit (state management), Redux Persist(store in local storage), React dropzone for image uploads
+- React, JavaScript, React Router (navigation), Formik & Yup (form validation), redux toolkit (state management), Redux Persist(store in local storage), React dropzone for image uploads
 
 #### Backend: 
-Node.js(runtime), Express.js(backend framework), Mongoose (managing Mongo database), JWT (authentication), Multer (file uploads)
-Other backend packages: body-parser(process req body), bcrypt(PW encryption), Cors(cross origin request), dotenv(env variables), gridfs-stream(file upload), multer & multer-gridfs-storage(upload files locally), helmet(req safety), Morgan(login)
+- Node.js(runtime), Express.js(backend framework), Mongoose (managing Mongo database), JWT (authentication), Multer (file uploads)
+*Italic Text*Other backend packages:*Italic Text* body-parser(process req body), bcrypt(PW encryption), Cors(cross origin request), dotenv(env variables), gridfs-stream(file upload), multer & multer-gridfs-storage(upload files locally), helmet(req safety), Morgan(login)
 
 ## Steps
 
@@ -44,9 +43,13 @@ Frontend folder set up will be organized by scenes(homepage, profile page, login
 
 ##### Set up routes in App file
 
-##### Set up Redux Toolkit for state management. Start by creating slice for mode, login, logout, updating friends, post, and posts. Import this authReducer into root index file, create store, and wrap app with provider passing in store data. Configure React Persist here with your store to store data to local storage.
+##### Set up Redux Toolkit for state management. 
+- Start by creating slice for mode, login, logout, updating friends, post, and posts. 
+- Import this authReducer into root index file, create store, and wrap app with provider passing in store data. 
+- Configure React Persist here with your store to store data to local storage.
 
-##### Next create theme file in src directory and customize theme. Configure theme in App.js and pass in theme using Theme Provider. Use Css baseline to reset CSS.
+##### Next create theme file in src directory and customize theme. 
+- Configure theme in App.js and pass in theme using Theme Provider. Use Css baseline to reset CSS.
 
 ##### Create reusable flexBetween CSS component in components folder.
 
