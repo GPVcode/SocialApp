@@ -53,6 +53,11 @@ Set up Redux Toolkit for state management. Start by creating slice for mode, log
 
 Next create theme file in src directory and customize theme. Configure theme in App.js and pass in theme using Theme Provider. Use Css baseline to reset CSS.
 
+Next, create reusable flexBetween CSS component in components folder.
+
+Navbar:
+
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
