@@ -1,7 +1,5 @@
 # Fullstack Social Media App
 
-## Tools
-
 This project will use the following tools:
 
 #### Frontend: 
@@ -9,7 +7,7 @@ This project will use the following tools:
 
 #### Backend: 
 - Node.js(runtime), Express.js(backend framework), Mongoose (managing Mongo database), JWT (authentication), Multer (file uploads)
-*Italic Text*Other backend packages:*Italic Text* body-parser(process req body), bcrypt(PW encryption), Cors(cross origin request), dotenv(env variables), gridfs-stream(file upload), multer & multer-gridfs-storage(upload files locally), helmet(req safety), Morgan(login)
+- *Other backend packages:* body-parser(process req body), bcrypt(PW encryption), Cors(cross origin request), dotenv(env variables), gridfs-stream(file upload), multer & multer-gridfs-storage(upload files locally), helmet(req safety), Morgan(login)
 
 ## Steps
 
@@ -32,7 +30,7 @@ This project will use the following tools:
 - set up Mongoose model for Post and import it into post controllers
 - set up POST middleware controllers (createPost, getFeedPosts, getUserPosts, likePost) in /controllers/post.js
 
-Backend is now complete with necessary routes.
+*Backend is now complete with necessary routes.*
 
 ### Frontend
 Frontend folder set up will be organized by scenes(homepage, profile page, login page, global navbar, and widgets), reusable components, and state for redux and toolkit configuration.
@@ -57,7 +55,15 @@ Frontend folder set up will be organized by scenes(homepage, profile page, login
 - Set up Navbar to navigate to home when clicking logo; Have light and dark toggle; Search bar; Icons for messages, notifications, and help; Dropdown with user's name and logout button.
 - Make navbar responsive for mobile and desktop perfomance. 
 
-##### Login
+##### Login:
+- create an index and form folder.
+- the form folder will use Yup to create schemas for register and login that ensure data validation. This file will also hold initial state values for register and login. Further, our forms and input types will be validated and managed by Yup and Formik. From this frm file, we can make API calls to our server to launched register and login. Register will create user in DB with Mongoose and navigate back to Login interface. Loggin in will dispatch setLogin reducer from redux toolkit and launch login functions. Mongoose will find email in DB and navigate to home page if token is returned, authenticating the user. This token will also give access to profile page.
+
+### Authentication and Authorization is now complete.
+
+#### Widgets for front end experience
+- set up user widgets, widget to post content, wdget to display posted content,
+
 
 ## Learn More
 

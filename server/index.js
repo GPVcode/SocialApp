@@ -20,7 +20,10 @@ import { users, posts } from "./data/index.js"
 
 // middleware and package config
 const __filename = fileURLToPath(import.meta.url);
+console.log("filename: ", __filename)
 const __dirname = path.dirname(__filename);
+console.log("dirname: ", __dirname)
+
 dotenv.config();
 const app = express();
 app.use(express.json());
